@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>굿투그레이트 운영지원팀 인수인계 (대표님전용)</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta property="og:title" content="굿투그레이트 운영지원팀 인수인계 (대표님전용)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ahyeon3.github.io/ops-handover-ceo/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --indigo:#7459D9; --indigo-deep:#422F8A; --indigo-2:#A08BE6; --indigo-3:#CFC4F3; --indigo-tint:#EEECFA;
+  --text:#11263C; --text-2:#4B5563; --muted:#757575; --muted-2:#A2A3A5; --line:#ECE9F1; --line-2:#D0D1D2;
+  --bg:#F2F2F7; --panel:#F8F9FE; --card:#FFFFFF; --card-2:#F8F9FE;
+  --pink:#FA4778; --green:#14C393; --yellow:#F5B800; --blue:#1F8DED;
+  --pink-bg:#FFEEF3; --green-bg:#E6F9F3; --yellow-bg:#FFF7DB; --blue-bg:#E8F3FD;
+  --sh16:0 18px 28px rgba(50,50,71,.07),0 8px 12px rgba(50,50,71,.06);
+  --sh4:0 4px 8px rgba(50,50,71,.01),0 4px 4px rgba(0,0,0,.08);
+  --r:20px; --r-s:14px;
+  --fs:14.5px; --fs-s:13.5px; --fs-xs:12.5px;
+}
+html[data-theme="dark"]{
+  --indigo:#7D7BFF; --indigo-deep:#B4B2FF; --indigo-2:#9A98FF; --indigo-3:#5A58B8; --indigo-tint:#2A2A48;
+  --text:#EBEBF5; --text-2:#C9C9D6; --muted:#9A9AA8; --muted-2:#6E6E7A; --line:#3D3C41; --line-2:#4A4950;
+  --bg:#1C1C1E; --panel:#232326; --card:#2C2C2E; --card-2:#333336;
+  --pink:#FF6B93; --green:#2BD9A8; --yellow:#F2C94C; --blue:#4DA3F5;
+  --pink-bg:#3A2630; --green-bg:#1F3A33; --yellow-bg:#3A3320; --blue-bg:#1F2E40;
+  --sh16:0 18px 28px rgba(0,0,0,.35),0 8px 12px rgba(0,0,0,.25);
+  --sh4:0 4px 8px rgba(0,0,0,.2);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:var(--bg);color:var(--text);font-size:var(--fs);line-height:1.6;letter-spacing:-0.01em;word-break:keep-all;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--indigo);text-decoration:none}
+b,strong{font-weight:600}
+p{margin:0}
+.app{display:grid;grid-template-columns:80px minmax(0,1fr) 300px;min-height:100vh}
+
+/* rail */
+.rail{background:var(--card);border-right:1px solid var(--line);padding:22px 0;display:flex;flex-direction:column;align-items:center;gap:6px;position:sticky;top:0;height:100vh}
+.logo{width:44px;height:44px;border-radius:16px;background:var(--indigo);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;letter-spacing:.5px;margin-bottom:14px;font-family:Poppins,sans-serif}
+.rail button{width:46px;height:46px;border-radius:14px;border:0;background:transparent;color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;position:relative;transition:.15s}
+.rail button:hover{background:var(--indigo-tint);color:var(--indigo)}
+.rail button.on{background:var(--indigo);color:#fff}
+.rail button svg{width:21px;height:21px}
+.rail button .tip{position:absolute;left:56px;top:50%;transform:translateY(-50%);background:var(--text);color:var(--bg);font-size:12px;padding:4px 10px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:.15s;z-index:20}
+.rail button:hover .tip{opacity:1}
+
+/* top bar */
+.main{min-width:0}
+.topbar{height:68px;display:flex;align-items:center;gap:6px;padding:0 36px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:10}
+.tabs{display:flex;gap:2px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
+.tab{border:0;background:transparent;font:inherit;font-weight:600;font-size:14.5px;letter-spacing:-.01em;color:var(--muted);padding:9px 12px;cursor:pointer;position:relative;white-space:nowrap;border-radius:10px;transition:.15s}
+.tab:hover{color:var(--text);background:var(--indigo-tint)}
+.tab.on{color:var(--text)}
+.tab.on::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--indigo)}
+.top-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.date{font-size:13px;color:var(--muted);white-space:nowrap}
+.theme{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--card);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text)}
+.theme svg{width:17px;height:17px}
+
+/* content rhythm */
+.content{padding:30px 36px 56px;min-width:0}
+.view{display:none;min-width:0}
+.view.on{display:block}
+.view > * + *{margin-top:20px}
+.view > h1{margin:0}
+.view > h1 + *{margin-top:18px}
+.view > h2{margin-top:30px}
+.view > h2 + *{margin-top:12px}
+.hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.hero > div{display:grid;gap:12px}
+
+h1{font-size:26px;line-height:1.3;margin:0;font-weight:700;letter-spacing:-.02em}
+h2{font-size:18px;line-height:1.35;margin:0 0 16px;font-weight:700;letter-spacing:-.02em}
+h3{font-size:16px;line-height:1.4;margin:0 0 8px;font-weight:600;letter-spacing:-.015em}
+h4{font-size:13.5px;line-height:1.4;margin:0 0 8px;font-weight:600;color:var(--text-2);letter-spacing:0}
+* + h4{margin-top:14px}
+.label{font-size:11.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:600}
+.sub{color:var(--muted);font-size:13.5px}
+.lead{font-size:15px;color:var(--text-2);max-width:900px}
+.small{font-size:var(--fs-s)}
+.mini{font-size:12.5px;color:var(--muted)}
+.muted{color:var(--muted)}
+.nowrap{white-space:nowrap}
+.note{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.55}
+.hl{background:var(--yellow-bg);padding:0 4px;border-radius:4px}
+
+/* grid & cards */
+.grid{display:grid;gap:20px;min-width:0}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.stack{display:grid;gap:20px;align-content:start}
+.card{background:var(--card);border-radius:var(--r);padding:22px 24px;box-shadow:var(--sh16);border:1px solid transparent;min-width:0}
+html[data-theme="dark"] .card{border-color:var(--line)}
+.card.flat{box-shadow:var(--sh4)}
+.card.tint{background:var(--indigo-tint);box-shadow:none}
+.card > :last-child{margin-bottom:0}
+a.card{display:flex;flex-direction:column;gap:6px;color:inherit;transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translateY(-2px);box-shadow:0 22px 32px rgba(50,50,71,.12),0 10px 14px rgba(50,50,71,.08)}
+a.card h3{margin:2px 0 0}
+a.card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+a.card .pill{margin-top:auto;align-self:flex-start}
+a.card .pill{margin-top:14px}
+.stat{padding:20px 22px}
+.stat .k{font-size:12.5px;color:var(--muted);font-weight:500;letter-spacing:0}
+.stat .v{font-size:28px;font-weight:700;line-height:1.15;margin:6px 0 4px;color:var(--text);font-family:Poppins,"Pretendard Variable",sans-serif;letter-spacing:-.3px}
+.stat .d{font-size:13px;color:var(--text-2);line-height:1.5}
+.ico{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex:none}
+.ico svg{width:22px;height:22px}
+.ico.indigo{background:var(--indigo-tint);color:var(--indigo)}
+.ico.pink{background:var(--pink-bg);color:var(--pink)}
+.ico.green{background:var(--green-bg);color:var(--green)}
+.ico.yellow{background:var(--yellow-bg);color:var(--yellow)}
+.ico.blue{background:var(--blue-bg);color:var(--blue)}
+.row{display:flex;gap:14px;align-items:flex-start}
+
+/* tables */
+.tablewrap{overflow-x:auto;min-width:0}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.55}
+th{text-align:left;font-weight:600;color:var(--muted);font-size:12.5px;letter-spacing:0;padding:8px 12px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text)}
+tr:last-child td{border-bottom:0}
+td:first-child,th:first-child{padding-left:4px}
+td:last-child,th:last-child{padding-right:4px}
+td.k,th.k{font-weight:600;min-width:96px;max-width:220px}
+td small{color:var(--muted);font-weight:400;font-size:12.5px}
+.card.tint th{border-bottom-color:rgba(116,89,217,.18)}
+.card.tint td{border-bottom-color:rgba(116,89,217,.14)}
+html[data-theme="dark"] .card.tint th,html[data-theme="dark"] .card.tint td{border-bottom-color:var(--line)}
+
+/* pills, tags, owners */
+.pill{display:inline-block;padding:3px 11px;border-radius:100px;font-size:12.5px;letter-spacing:0;font-weight:600;white-space:nowrap;line-height:1.5}
+.pill.indigo{background:var(--indigo-tint);color:var(--indigo)}
+.pill.pink{background:var(--pink-bg);color:var(--pink)}
+.pill.green{background:var(--green-bg);color:var(--green)}
+.pill.yellow{background:var(--yellow-bg);color:var(--yellow)}
+.pill.blue{background:var(--blue-bg);color:var(--blue)}
+.pill.gray{background:var(--bg);color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:100px;font-size:12px;font-weight:600;background:var(--indigo-tint);color:var(--indigo)}
+.tag{display:inline-block;padding:3px 9px;border-radius:8px;font-size:12.5px;letter-spacing:0;font-weight:600;background:var(--bg);color:var(--text-2);margin:0 6px 6px 0;line-height:1.5}
+.tag.a{background:var(--indigo-tint);color:var(--indigo)}
+.tag.b{background:var(--green-bg);color:#0E8F6C}
+.tag.c{background:var(--yellow-bg);color:#8A6400}
+.tag.p{background:var(--pink-bg);color:var(--pink)}
+.tag.bl{background:var(--blue-bg);color:var(--blue)}
+html[data-theme="dark"] .tag.b{color:var(--green)}
+html[data-theme="dark"] .tag.c{color:var(--yellow)}
+.owner{font-weight:600;white-space:nowrap}
+.o-a{color:var(--indigo)}
+.o-b{color:#0E8F6C}
+.o-c{color:#9A6F00}
+.o-ceo,.o-fin{color:var(--blue)}
+html[data-theme="dark"] .o-b{color:var(--green)}
+html[data-theme="dark"] .o-c{color:var(--yellow)}
+.o-lead{color:#E0262F;font-weight:700}
+html[data-theme="dark"] .o-lead{color:#FF6B6B}
+.lead-note{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#FDECEC;color:#7A1C22;font-size:14px;line-height:1.5}
+html[data-theme="dark"] .lead-note{background:#3A2226;color:#F5C2C5}
+.ceo-todo{border-left:5px solid #E0262F}
+.ceo-todo h2{display:flex;align-items:center;gap:10px}
+.ceo-todo .todo-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ceo-todo .todo-list li{display:flex;align-items:center;gap:12px;background:var(--panel);border-radius:12px;padding:12px 16px;font-size:14.5px;font-weight:500}
+.ceo-todo .todo-list .when{flex:0 0 58px;text-align:center;background:#FDECEC;color:#E0262F;border-radius:8px;padding:3px 0;font-size:12.5px;font-weight:700}
+html[data-theme="dark"] .ceo-todo .todo-list .when{background:#3A2226;color:#FF6B6B}
+.ceo-todo .todo-list .muted{font-weight:400}
+.lead-badge{display:inline-block;background:#E0262F;color:#fff;border-radius:6px;padding:2px 8px;font-weight:700;font-size:12px;white-space:nowrap}
+
+/* lists & text blocks */
+ul,ol{margin:4px 0 0;padding-left:17px}
+li{margin:5px 0;line-height:1.55}
+li::marker{color:var(--muted-2)}
+ul.small li,ol.small li{line-height:1.55}
+.two{columns:2;column-gap:28px}
+.two li{break-inside:avoid}
+.callout{border-radius:var(--r-s);padding:14px 18px;background:var(--panel);border:1px solid var(--line);font-size:14px;line-height:1.6}
+.callout.indigo{background:var(--indigo-tint);border-color:transparent}
+.callout.pink{background:var(--pink-bg);border-color:transparent}
+.callout.green{background:var(--green-bg);border-color:transparent}
+.callout.yellow{background:var(--yellow-bg);border-color:transparent}
+.callout ul,.callout ol{margin-top:6px}
+.quote{font-size:15px;line-height:1.7;color:var(--text);border-left:3px solid var(--indigo);padding-left:16px;margin:0}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);margin:0}
+.steps li:last-child{border-bottom:0}
+.steps li::before{content:counter(s);flex:none;width:28px;height:28px;border-radius:10px;background:var(--indigo-tint);color:var(--indigo);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+.steps .t{font-weight:600}
+.steps .s{color:var(--text-2);font-size:13px}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:10px 16px;font-size:14px;line-height:1.55;margin:0}
+.kv dt{color:var(--muted);font-weight:500}
+.kv dd{margin:0}
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.tl{position:relative;padding:0 0 16px}
+.tl:last-child{padding-bottom:0}
+.tl::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--indigo);border:3px solid var(--card)}
+.tl.pink::before{background:var(--pink)}
+.tl.green::before{background:var(--green)}
+.tl.yellow::before{background:var(--yellow)}
+.tl .when{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:0}
+.tl .what{font-weight:600;margin:2px 0}
+.tl .how{font-size:13.5px;color:var(--text-2)}
+
+/* flow, week, person */
+.flow{display:grid;grid-template-columns:repeat(var(--cols,6),minmax(0,1fr));gap:10px}
+@media (max-width:1100px){.flow{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+.flow .st{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13.5px;line-height:1.55;min-width:0;display:flex;flex-direction:column}
+html[data-theme="dark"] .flow .st{background:var(--card-2)}
+.flow .st b{display:block;font-size:13px;color:var(--indigo);margin-bottom:4px;font-weight:700}
+.flow .st .who{display:block;font-size:12.5px;color:var(--muted);margin-top:auto;padding-top:6px}
+.week{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.day{background:var(--panel);border-radius:var(--r-s);padding:14px 16px;border:1px solid var(--line)}
+html[data-theme="dark"] .day{background:var(--card-2)}
+.day .d{font-weight:700;font-size:14px;color:var(--indigo);margin-bottom:8px}
+.day ul{list-style:none;padding:0;margin:0}
+.day li{margin:0;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px;line-height:1.5}
+.day li:first-child{border-top:0;padding-top:0}
+.day li:last-child{padding-bottom:0}
+.day .who{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.person{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start}
+.person .av{width:56px;height:56px;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:19px;color:#fff;font-family:Poppins,"Pretendard Variable",sans-serif}
+.av.a{background:#7459D9}.av.b{background:#14C393}.av.c{background:#F5B800}
+.person h3{margin:0 0 2px;font-size:18px}
+.person .sub{font-size:13px;color:var(--muted);margin-bottom:12px}
+.person .grid{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+
+/* link lists */
+.src-list a{display:block;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--text);line-height:1.5}
+.src-list a:last-child{border-bottom:0}
+.src-list a:hover{color:var(--indigo)}
+.src-list a span{display:block;font-size:12.5px;color:var(--muted)}
+
+/* right panel */
+.panel{background:var(--panel);border-left:1px solid var(--line);padding:24px 20px;position:sticky;top:0;height:100vh;overflow-y:auto}
+.pcard{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:var(--sh4);margin-bottom:16px}
+html[data-theme="dark"] .pcard{border:1px solid var(--line)}
+.pcard h3{font-size:14px;margin:0 0 8px;color:var(--text)}
+.pitem{display:flex;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.pitem:last-child{border-bottom:0;padding-bottom:0}
+.pitem .n{font-weight:700;font-size:15px;line-height:1.2}
+.pitem .l{font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:2px}
+.pitem .ico{width:38px;height:38px;border-radius:13px}
+.pitem .ico svg{width:17px;height:17px}
+.src{display:block;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.5}
+.src:last-child{border-bottom:0;padding-bottom:0}
+.src .t{display:block;font-weight:600;color:var(--text)}
+.src .m{display:block;font-size:12.5px;color:var(--muted)}
+a.src:hover .t{color:var(--indigo)}
+
+/* page-specific */
+#v-issues .card{max-width:880px}
+#v-marketing .kv{grid-template-columns:104px 1fr}
+
+/* responsive & print */
+@media (max-width:1280px){.app{grid-template-columns:80px minmax(0,1fr)}.panel{display:none}}
+@media (max-width:1100px){.date{display:none}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){.app{grid-template-columns:1fr}.rail{display:none}.g2,.g3,.g4,.g5,.g6{grid-template-columns:1fr}.week{grid-template-columns:1fr}.two{columns:1}.person{grid-template-columns:1fr}.content{padding:20px 16px 40px}.topbar{padding:0 16px}h1{font-size:23px}.kv{grid-template-columns:84px 1fr}}
+@media print{.rail,.panel,.topbar{display:none}.app{display:block}.view{display:block!important;page-break-before:always}.card{box-shadow:none;border:1px solid #ddd}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="rail">
+  <div class="logo">G2G</div>
+  <button class="on" data-v="overview" title="개요"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span class="tip">개요</span></button>
+  <button data-v="team" title="팀원"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-7 7-7s7 3 7 7"/><circle cx="17" cy="9" r="3"/><path d="M17 14c3 0 5 2 5 5"/></svg><span class="tip">팀원</span></button>
+  <button data-v="roles" title="분장·일정"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><span class="tip">분장·일정</span></button>
+  <button data-v="process" title="프로세스"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h6l2 3h8v9H4z"/><path d="M4 7V5h5"/></svg><span class="tip">프로세스</span></button>
+  <button data-v="partners" title="거래처"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg><span class="tip">거래처</span></button>
+  <button data-v="marketing" title="마케팅"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-5v12L3 13z"/><path d="M11 17v4M7 12v5"/></svg><span class="tip">마케팅</span></button>
+  <button data-v="ledger" title="노션·시트"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 10h16M10 4v16"/></svg><span class="tip">노션·시트</span></button>
+  <button data-v="manage" title="팀 관리"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg><span class="tip">팀 관리</span></button>
+  <button data-v="issues" title="현안"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2.5 18a2 2 0 001.7 3h15.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg><span class="tip">현안</span></button>
+  <button data-v="links" title="링크"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 14a5 5 0 007 0l3-3a5 5 0 00-7-7l-1 1"/><path d="M14 10a5 5 0 00-7 0l-3 3a5 5 0 007 7l1-1"/></svg><span class="tip">링크</span></button>
+</aside>
+<div class="main">
+  <div class="topbar">
+    <div class="tabs">
+      <button class="tab on" data-v="overview">개요</button>
+      <button class="tab" data-v="team">팀원</button>
+      <button class="tab" data-v="roles">분장·일정</button>
+      <button class="tab" data-v="process">프로세스</button>
+      <button class="tab" data-v="partners">거래처</button>
+      <button class="tab" data-v="marketing">마케팅</button>
+      <button class="tab" data-v="ledger">노션·시트</button>
+      <button class="tab" data-v="manage">팀 관리</button>
+      <button class="tab" data-v="issues">현안</button>
+      <button class="tab" data-v="links">링크</button>
+    </div>
+    <div class="top-right">
+      <span class="date">2026.11.09 기준</span>
+      <button class="theme" id="theme" aria-label="다크 모드"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+    </div>
+  </div>
+  <div class="content">
+<section class="view on" id="v-overview">
+  <div class="hero">
+    <div>
+      <h1>운영지원팀 인수인계</h1>
+      <p class="lead-note"><span class="lead-badge">팀장</span><span>빨간색 <b>팀장</b>으로 표시된 부분은 원래 팀장 컨펌이 필요했던 일들이에요. 지금은 대표님께서 확인해 주시면 됩니다.</span></p>
+    </div>
+  </div>
+
+  <div class="card ceo-todo">
+    <h2><span class="lead-badge">팀장</span>대표님이 챙기실 것</h2>
+    <ul class="todo-list">
+      <li><span class="when">수시</span>신규 업체 · 단가 · 원가 판단</li>
+      <li><span class="when">수시</span>웹사이트 · 블로그 포스팅, 언론보도, AEO 관련 키워드 · 송출 원고 컨펌</li>
+      <li><span class="when">주 2회</span>부산지사 마감서 검수</li>
+      <li><span class="when">월초</span>매니저별 담당 장부 대조 결과 오류 검수</li>
+      <li><span class="when">월초</span>미수금 수취 현황 파악</li>
+    </ul>
+  </div>
+
+  <div class="grid g4">
+    <div class="card stat"><div class="k">매니저</div><div class="v">3명</div><div class="d">김영광 8/26 · 이서연 9/14 · 김승일 10/26 입사</div></div>
+    <div class="card stat"><div class="k">리뷰 거래처</div><div class="v">12곳</div><div class="d">물량의 대부분은 부산지사·흐름컴퍼니</div></div>
+    <div class="card stat"><div class="k">장부</div><div class="v">46개</div><div class="d">매입 20 · 매출 26, 담당 정·부 지정</div></div>
+    <div class="card stat"><div class="k">부산지사 정산</div><div class="v">주 2회</div><div class="d">화: 금~월 접수 전체 · 금: 화~목 접수 전체</div></div>
+  </div>
+
+  <div class="card tint">
+    <h2>매니저들에게 인계해 둔 질의 · 컨펌 창구</h2>
+    <div class="tablewrap"><table>
+      <tr><th>항목</th><th>창구</th></tr>
+      <tr><td class="k">단가 결정</td><td>모든 업체는 <b class="o-ceo">대표님</b> / 부산지사는 <b class="o-ceo">부대표님</b></td></tr>
+      <tr><td class="k">신규 업체 유입</td><td>온보딩 1의 신규 업체 유입 프로세스대로 진행(숨고 · 크몽 등) + 대표님과 실시간 소통</td></tr>
+      <tr><td class="k">그 외 업무 애로사항</td><td>G2G 마케팅운영본부 운영지원팀 방 또는 꼬맹이들방에서 대표님 · 부대표님께 질의</td></tr>
+      <tr><td class="k">리뷰</td><td class="owner">조엠마 팀장님</td></tr>
+      <tr><td class="k">자동구매 · 회송 · 트래픽 · 슬롯 · 기타상품 · 기획 · AEO · 메타 등</td><td>① 온보딩 확인 → ② 대표님 또는 부대표님 → ③ 해당 실행사 방</td></tr>
+      <tr><td class="k">언론보도 (매주)</td><td><span class="owner o-b">서연</span> 기사 제작 → <span class="owner o-c">승일</span> 뉴스컴바인 접수 · 초안 → <span class="owner o-lead">팀장</span> 컨펌 → <span class="owner o-lead">팀장</span> 완료 후 발행</td></tr>
+      <tr><td class="k">부산지사 정산 (주 2회)</td><td><span class="owner o-a">영광</span> 점검 → <span class="owner o-lead">팀장</span> 또는 경지부 컨펌 → 컨펌에 맞춰 수정 → 정산서 송부</td></tr>
+      <tr><td class="k">웹사이트 · 블로그 · 숨고 · 크몽</td><td><span class="owner o-b">서연</span> ↔ <span class="owner o-lead">팀장</span> 수시 컨펌 · 소통</td></tr>
+      <tr><td class="k">근태 · 연장근로 · 듀얼넘버</td><td class="owner">조엠마 팀장님</td></tr>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>한 주 리듬</h2>
+    <div class="week">
+      <div class="day"><div class="d">월</div><ul><li>부산 화요 정산 마감서 초안 → 검수<span class="who">금~월 접수 전체, 영광</span></li><li>메타·DB 주간 보고서 작성 → 조엠마 팀장님 보고<span class="who">영광</span></li></ul></div>
+      <div class="day"><div class="d">화</div><ul><li>부산 화요 정산 마감서 송부 → 입금 → 세발<span class="who">영광</span></li><li>언론보도 주제 컨펌<span class="who">서연</span></li></ul></div>
+      <div class="day"><div class="d">수</div><ul><li>언론보도 기사 제작<span class="who">서연</span></li><li>금요 정산분 자료 정리<span class="who">영광</span></li></ul></div>
+      <div class="day"><div class="d">목</div><ul><li>부산 금요 정산 마감서 초안 → 검수<span class="who">화~목 접수 전체, 영광</span></li><li>블로그 다음 주 주제<span class="who">서연·영광</span></li><li>보도 초안 컨펌<span class="who">서연 → <span class="owner o-lead">팀장</span></span></li></ul></div>
+      <div class="day"><div class="d">금</div><ul><li>인덕 주간 견적 오전<span class="who">서연·승일</span></li><li>부산 금요 정산 마감서 송부 → 입금 → 세발<span class="who">영광</span></li><li>블로그 주제 확정 · 보도 최종 컨펌<span class="who"><span class="owner o-lead">팀장</span></span></li></ul></div>
+    </div>
+    <div class="callout indigo" style="margin-top:16px">
+      <b>월초 (전원)</b>
+      <ul class="small">
+        <li>본인 담당 업체·상품 전부 장부 / 톡방 / UI 대조 → 2~3일 안에 장부 오류 0건으로 맞춤</li>
+        <li>월초부터 미수금 본격 수취</li>
+        <li>흐름 트래픽·슬롯 월 견적서 흐름에 송부</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>업무에서 주로 쓰는 곳</h2>
+  <div class="grid g4">
+    <a class="card" href="https://docs.google.com/spreadsheets/d/12q18oCnGOmjfzf8BdcBiIcjuhJe1a1_zXEzlqnZe6to/edit?gid=979529536#gid=979529536" target="_blank">
+      <div class="label">구글시트 · 공용</div>
+      <h3>운영본부 마스터 시트</h3>
+      <p class="small muted">모든 시트·UI·장부의 입구. 노션과 함께 전 업무에서 공용으로 사용</p>
+      <span class="pill indigo">열기 →</span>
+    </a>
+    <a class="card" href="https://app.notion.com/p/377709a2f4a080688cf8dc86c1983d95" target="_blank">
+      <div class="label">노션 · 공용</div>
+      <h3>운영지원팀 마스터 노션</h3>
+      <p class="small muted">마스터 시트와 함께 모든 업무에서 공용으로 쓰는 노션</p>
+      <span class="pill indigo">열기 →</span>
+    </a>
+    <a class="card" href="https://docs.google.com/spreadsheets/d/1vSLTQoSA5KJejGf4GDfon6rfK1g1Osa4ubN1KiI9Bn8/edit?gid=1517751605#gid=1517751605" target="_blank">
+      <div class="label">구글시트</div>
+      <h3>운영지원팀 업무분장표</h3>
+      <p class="small muted">매니저별 정·부 담당 원본. 거래처·장부·마케팅 업무를 누가 맡는지</p>
+      <span class="pill indigo">열기 →</span>
+    </a>
+    <a class="card" href="https://ahyeon3.github.io/aeo-seo-publishing/#overview" target="_blank">
+      <div class="label">업무표</div>
+      <h3>AEO·SEO 발행 업무표</h3>
+      <p class="small muted">AEO 일별·주별·월별 스케줄과 키워드 정리</p>
+      <span class="pill indigo">열기 →</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>운영지원팀 링크</h2>
+    <div class="grid g2">
+      <div>
+        <h4 style="margin-top:0">구글시트</h4>
+        <div class="src-list">
+          <a href="https://docs.google.com/spreadsheets/d/1aaKpFbDVjhzzoHTexnsf1EI0uMXojWA0qZynlNMQHGw/edit?gid=1088838831#gid=1088838831" target="_blank">운영지원팀 월별 입출금 시트</a>
+          <a href="https://docs.google.com/spreadsheets/d/1QHZEjbCbplGJnECQBQts7_V6fTQhB_GI1T3G3IZxujs/edit?gid=2083689016#gid=2083689016" target="_blank">운영지원팀 택배대행 관리 시트</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin-top:0">노션</h4>
+        <div class="src-list">
+          <a href="https://app.notion.com/p/3b9709a2f4a0819bac34f208bee3e40f" target="_blank">운영지원팀 견적서 · 계산서</a>
+          <a href="https://www.notion.so/3cd709a2f4a0813da7c5db0a31f0e9f6" target="_blank">운영지원팀 접수 파일</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="view" id="v-team">
+  <h1>팀원</h1>
+
+  <div class="card">
+    <div class="person">
+      <div class="av a">영</div>
+      <div>
+        <h3>김영광</h3>
+        <div class="sub">2026-08-26 입사</div>
+        <span class="tag a">굿투 부산지사 · 알앤알</span><span class="tag a">Meta 광고·DB·보고</span><span class="tag a">홈페이지·카톡 비즈니스</span><span class="tag a">영상·이미지·문구 제작</span><span class="tag a">아우어·토큰플러스·제이앤베스트·리뷰트리 장부</span><span class="tag a">상위노출·AEO·블로그·보도 부</span>
+        <div class="grid g3">
+          <div><h4>강점</h4><ul class="small"><li>책임감이 강함</li><li>승일·서연 매니저가 많이 의지함</li><li>입사가 가장 빨라 업무 숙련도·이해도가 다른 매니저보다 높은 편</li><li>장부 문제나 오류 검수 때는 보통 서연과 둘이 머리를 맞대고 오류를 찾음</li><li>주변에 휘둘리지 않고, 무리 지어 다니지 않음</li><li>원칙대로 움직이고 지시를 정확히 확인함</li><li>메타·DB 주간 보고서와 소재 제언을 매주 제출</li><li>퇴근 전 진행 사안을 번호 목록으로 보고</li></ul></div>
+          <div><h4>보완점</h4><ul class="small"><li>유도리·센스가 부족함. 하나를 말하면 그 하나로만 쭉 가고, +α로 다르게 생각하는 힘이 약함</li><li>실수가 생각보다 많음. 성향인지, 부산지사를 혼자 맡은 탓인지는 아직 판단이 어려움</li><li>마감서는 팀장 검수로 걸러지지만 장부에는 실수가 남음(확인 요청 매주 3~10건)</li><li>9/21 송장 중복 요청으로 회사 손실 발생</li><li>업무가 몰리면 실수가 많아짐</li><li>사람들과 소통이 원활하지 않음</li><li>반복 질문이 생각보다 많음. 이해도가 다소 떨어지는 건지, 이해한 뒤 나중에 잊는 건지는 판단이 어려움</li><li>업무를 기계적으로 하는 편</li></ul></div>
+          <div><h4>관리 포인트</h4><ul class="small"><li>지시는 범위·예외까지 구체적으로 전달</li><li>부산지사 물량이 팀의 절반. 11/5부터 서연이 보조하므로, 이후 실수가 줄어드는지 보면 원인을 가늠할 수 있음</li><li>메타 보고 수신자 재지정 필요(기존 협력팀장)</li><li>성향상 영업팀 전환은 맞지 않음</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="person">
+      <div class="av b">서</div>
+      <div>
+        <h3>이서연</h3>
+        <div class="sub">2026-09-14 입사</div>
+        <span class="tag b">상위노출 · AEO·GEO</span><span class="tag b">블로그·웹사이트 포스팅</span><span class="tag b">홍보 기사 제작</span><span class="tag b">크몽·숨고</span><span class="tag b">인덕·제이솔·마케이드·제이투·와이즈·비상한</span><span class="tag b">흐름 월 트래픽 정산</span><span class="tag b">이음·마케이드·퍼펙트·체험인·루메인·임소정·애드스테이션 장부</span>
+        <div class="grid g3">
+          <div><h4>강점</h4><ul class="small"><li>매우 꼼꼼하고 책임감이 강함. 실수가 적음</li><li>장부 문제나 오류 검수 때는 보통 영광과 둘이 머리를 맞대고 오류를 찾음</li><li>문제 해결 능력이 좋음. 방향만 잡아 주면 알아서 헤쳐 나감</li><li>유도리·센스가 좋아 대화 내용과 기존 업무 자료만 보고도 곧잘 처리함</li><li>하나를 말하면 다른 매니저보다 +α로 생각함. 나이가 있어서인지 생각이 어리지 않음</li><li>소통이 원활함</li><li>업체 응대에 적극적이고 잘함. 거래처 사장님과의 통화·응대도 무리 없이 소화</li><li>질문이 정제됨. 단가·계산서·규정처럼 혼자 정하면 안 되는 것만 물음</li><li>월초 장부 전수 대조와 미수금 요청 주도</li></ul></div>
+          <div><h4>보완점</h4><ul class="small"><li>힘들어도 먼저 말하지 않음</li></ul></div>
+          <div><h4>관리 포인트</h4><ul class="small"><li>주 1회 업무량 직접 확인</li><li>시트 권한 승인 요청이 거의 매일 옴. 승인 권한자 지정 필요</li><li>크몽 가격·숨고 캐시 지출은 <span class="owner o-lead">팀장</span> 컨펌</li><li><b style="color:var(--blue)">업무 성향은 후임 팀장으로 가장 적합. 다만 본인이 맡을지는 성격상 직접 소통해 확인 필요</b></li><li>성향상 영업팀 전환은 맞지 않음</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="person">
+      <div class="av c">승</div>
+      <div>
+        <h3>김승일</h3>
+        <div class="sub">2026-10-26 입사</div>
+        <span class="tag c">홍보계정 업로드(아이보스·셀클럽·마멘토, 일 2회)</span><span class="tag c">언론보도 접수(뉴스컴바인)</span><span class="tag c">흐름컴퍼니 · 시골장터·다예나·사자앤뷰·삼인기획·커리쉴·KCA</span><span class="tag c">자몽랩·뭉치·TSAD·언론보도·애드코드·에이치컴퍼니·네이비 장부</span><span class="tag c">Meta·홈페이지 부</span>
+        <div class="grid g3">
+          <div><h4>강점</h4><ul class="small"><li>배우는 속도와 머리 회전이 빨라 이해도·습득력이 뛰어남</li><li>습득·이해가 빨라 질문이 많지 않음. 모르는 것은 교육 자료를 계속 찾아보며 익히는 편</li><li>유도리·센스가 좋아 대화 내용과 기존 업무 자료만 보고도 곧잘 처리함</li><li>업무를 어디서 파악해야 하는지 알고 스스로 문제를 해결함. 눈치가 빠르고 문제 해결력·생각하는 힘이 좋음</li></ul></div>
+          <div><h4>보완점</h4><ul class="small"><li>아직 신입이라 성향·역량은 더 지켜봐야 함</li></ul></div>
+          <div><h4>관리 포인트</h4><ul class="small"><li>11/6부터 정해진 일정 없이 수시 인계</li><li>현재 흐름컴퍼니 주 담당</li><li><b style="color:var(--blue)">영업 역량이 받쳐준다면 운영팀에서 성장한 뒤 영업팀으로 넘어가도 괜찮을 듯</b></li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>팀 구성 이력</h2>
+      <div class="timeline">
+        <div class="tl"><div class="when">08.26 · 09.14</div><div class="what">김영광 · 이서연 입사</div></div>
+        <div class="tl"><div class="when">09.01</div><div class="what">최아현 총괄팀장</div><div class="how">운영지원팀은 직원 관리만 하고 업무에는 관여하지 않음. 9월부터 운영지원팀이 쓸 노션 구축, 교육자료·업무 자료 제작, 직원 교육 등 진행</div></div>
+        <div class="tl pink"><div class="when">09.25~10.19</div><div class="what">이수진 · 이수현 · 최유빈 퇴사, 이대영 조기 퇴사</div></div>
+        <div class="tl"><div class="when">10.01</div><div class="what">최아현 팀장 운영지원팀 인수</div><div class="how">운영지원팀 업무 본격적으로 맡기 시작</div></div>
+        <div class="tl green"><div class="when">10.26</div><div class="what">김승일 입사</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>근태 기준</h2>
+      <dl class="kv">
+        <dt>근무</dt><dd>10:00~19:00, 점심 13:00~14:00</dd>
+        <dt>연장근로</dt><dd>사전 보고·승인 후 최대 1시간. 미승인 야근은 불가</dd>
+        <dt>연차</dt><dd>최대 2일 연속, 공용 휴가 시트 기입 후 노티, 같은 날 2명 불가</dd>
+        <dt>발생</dt><dd>1달 만근 월차 1, 1년 만근 연차 15(미사용 소멸)</dd>
+        <dt>연봉 협상</dt><dd>매년 3월, 입사 6개월 이후</dd>
+        <dt>퇴사</dt><dd>30일 전 통보</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section class="view" id="v-roles">
+  <h1>분장 · 일정</h1>
+
+  <div class="card">
+    <h2>사람별 담당</h2>
+    <div class="tablewrap"><table>
+      <tr><th></th><th>리뷰 거래처 (정)</th><th>장부 (정)</th><th>마케팅 · 관리 (정)</th><th>트래픽·실행사 정산 (정)</th><th>부 담당</th></tr>
+      <tr><td class="owner o-a">김영광</td><td>굿투 부산지사 · 알앤알</td><td>아우어 · 토큰플러스 · 제이앤베스트 · 리뷰트리 · 부산지사 전체 트래픽·슬롯</td><td>영상·이미지·문구 제작 · Meta 광고 · Meta DB·전체 DB · Meta 보고·보고서 · 신규 홈페이지·홈페이지 · 카톡 비즈니스</td><td>아우어 · 토큰플러스 · 제이앤베스트</td><td>상위노출 · 언론보도 접수 · 홍보 기사 제작 · AEO·GEO · 블로그·웹사이트 포스팅 · 마케이드·TSAD·퍼펙트 장부</td></tr>
+      <tr><td class="owner o-b">이서연</td><td>마케이드 · 제이솔 · 인덕 · 제이투(앤드리) · 와이즈리테일 · 비상한</td><td>이음(태동) · 마케이드 · 퍼펙트 · 체험인 · 루메인 · 임소정 · 애드스테이션 · 자체모집</td><td>상위노출 · AEO·GEO · 블로그·웹사이트 포스팅 · 홍보 기사 제작 · 크몽·숨고</td><td>제이솔 · 태동 · 흐름(퍼펙트) · 마케이드 · 컨트롤 · 언론보도 · 체험인 · 쇼핑라이브·쇼호스트 · 흐름컴퍼니 월 트래픽 사용량</td><td>굿투 부산지사 · 흐름컴퍼니 · 승일 담당 거래처 · 부산지사·내외부 트래픽 · 프로핏·뭉치·토큰플러스·언론보도·애드코드·에이치컴퍼니·네이비 장부 · 영상·이미지·문구 제작 · 홍보계정 업로드</td></tr>
+      <tr><td class="owner o-c">김승일</td><td>흐름컴퍼니 · 시골장터 · 다예나 · 사자앤뷰 · 삼인기획 · 커리쉴 · KCA미디어</td><td>프로핏(자몽랩) · 뭉치 · TSAD · 언론보도 · 애드코드 · 에이치컴퍼니 · 네이비 · 내외부 트래픽·슬롯</td><td>홍보계정 업로드(아이보스·셀클럽·마멘토) · 언론보도 접수(뉴스컴바인)</td><td>TSAD · 자몽랩(프로핏) · 뭉치 · 에이치컴퍼니</td><td>서연 담당 거래처 · 알앤알 · 이음·아우어·체험인·루메인·제이앤베스트·리뷰트리·임소정·애드스테이션·자체모집 장부 · Meta 광고·DB·보고 · 홈페이지·카톡 비즈니스 · 크몽·숨고 · 흐름컴퍼니 월 트래픽 정산</td></tr>
+      <tr><td>전원</td><td colspan="5">상신(리뷰·자동리뷰 가이드 · 견적서 · 세금계산서 · 지출결의서 · 환불·외부업체 지결 · 영수증 전달) · 실행(트래픽 · 슬롯 · 블로그 배포 · 체험단 모집 · 카페 바이럴 · 핫딜·침투 · 택배대행) · 라이브커머스 · 그 외 상품 장부 · 월초 장부 점검 · 미수금 수취. 본인 기입 장부는 담당자가 정산</td></tr>
+      <tr><td>관리</td><td colspan="5">업체 전체 관리 · 사용자별 최종 정산: <b class="o-ceo">대표님</b> / 자료 관리 · 직원 관리: <b class="o-ceo">대표님</b>(부: 최아현) / 연장근로 · 듀얼넘버 · 휴가: 조엠마 / 트래픽·실행사 정산의 부 담당은 모두 경지부</td></tr>
+    </table></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>하루</h2>
+      <div class="tablewrap"><table>
+        <tr><th class="nowrap">시각</th><th>할 일</th><th>담당</th></tr>
+        <tr><td class="k">10:00</td><td>당일 업무 공지, 매니저 확인 회신</td><td><span class="owner o-lead">팀장</span></td></tr>
+        <tr><td class="k">~11:00 · 15~16시</td><td>홍보글 게시(아이보스·셀클럽·마멘토)</td><td class="owner o-c">승일</td></tr>
+        <tr><td class="k">매시간</td><td>메타·홈페이지·카톡 DB 확인 → 영업자 시트 기입 → 개인톡 전달</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">매일</td><td>메타 광고 일일 보고</td><td><span class="owner o-a">영광</span> → <span class="owner o-lead">팀장</span></td></tr>
+        <tr><td class="k">매일</td><td>블로그·웹 포스팅: 리뷰 홈페이지 3 · 메인 홈페이지 3 · 네이버 블로그 3건</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">수시</td><td>크몽·숨고 문의 응대, 숨고 견적 발송</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">수시</td><td>흐름컴퍼니 가이드 접수·견적서·리스트, 흐름 C/S</td><td class="owner o-c">승일</td></tr>
+        <tr><td class="k">~16:00</td><td>트래픽·슬롯 접수 (13:50 전 당일 구동)</td><td class="owner o-c">승일</td></tr>
+        <tr><td class="k">수시</td><td>접수 정제 → 다우 상신 → 협력x운영지원 방 링크 → 배정 확인</td><td>접수자</td></tr>
+        <tr><td class="k">리스트 수신 후</td><td>당일 구매분 송장 접수, 관리 시트 기록, 노션 파일 업로드</td><td>접수자</td></tr>
+        <tr><td class="k">18:00</td><td>현황·퇴근 보고</td><td>전원 → <span class="owner o-lead">팀장</span></td></tr>
+        <tr><td class="k">퇴근 전</td><td>견적서·계산서·접수 파일 노션 업로드, 익일 라이브 세팅</td><td>전원</td></tr>
+      </table></div>
+    </div>
+    <div class="card">
+      <h2>월초 · 월간</h2>
+      <div class="tablewrap"><table>
+        <tr><th class="nowrap">시점</th><th>할 일</th><th>담당</th></tr>
+        <tr><td class="k">1~3일</td><td>본인 담당 업체·상품 전부 장부 / 톡방 / UI 대조, 2~3일 안에 오류 0건 후 결과 노티</td><td>전원 → <span class="owner o-lead">팀장</span>·경지부</td></tr>
+        <tr><td class="k">월초~</td><td>미수금 본격 수취</td><td>전원</td></tr>
+        <tr><td class="k">월초</td><td>흐름 트래픽·슬롯 월 견적서 → 더블체크 → 흐름 송부(트래픽 정산방)</td><td class="owner o-b">서연 · <span class="owner o-c">승일</span></td></tr>
+        <tr><td class="k">~5일</td><td>듀얼넘버·알뜰폰 청구 취합 → 지결</td><td class="owner">조엠마</td></tr>
+        <tr><td class="k">월초</td><td>연장근로 산정 → 결의서 → 개인 내역 노션</td><td class="owner">조엠마</td></tr>
+        <tr><td class="k">월말 직후</td><td>마케이드 자동구매 제품비 페이백 지결</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">월 단위</td><td>제이투 제품비 변동분, 아우어, 자몽랩 선충전, 뉴스컴바인 후불</td><td>장부 담당</td></tr>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>주간</h2>
+      <div class="tablewrap"><table>
+        <tr><th class="nowrap">요일</th><th>할 일</th><th>담당</th></tr>
+        <tr><td class="k">월</td><td>부산 화요 정산 마감서 초안 → 검수 (금~월 접수 전체)</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">월</td><td>메타·홈페이지·카톡 DB 주간 보고서 작성 → 조엠마 팀장님 보고</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">월</td><td>인덕 전주 견적 결제 확인, 주말 리스트 일괄 전달</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">화</td><td>부산 화요 정산 마감서 송부 → 입금 확인 → 세발</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">화</td><td>언론보도 다음 주 주제 컨펌</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">수</td><td>언론보도 기사 제작 → 뉴스컴바인 접수</td><td><span class="owner o-b">서연</span> → <span class="owner o-c">승일</span></td></tr>
+        <tr><td class="k">목</td><td>부산 금요 정산 마감서 초안 → 검수 (화~목 접수 전체)</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">목</td><td>블로그 다음 주 주제 선정 · 보도 초안 컨펌</td><td class="owner o-b">서연</td></tr>
+        <tr><td class="k">금 오전</td><td>인덕 주간 합산 견적서·세금계산서</td><td class="owner o-b">서연 · <span class="owner o-c">승일</span></td></tr>
+        <tr><td class="k">금 오전</td><td>부산 금요 정산 마감서 수정 → 송부 → 입금 확인 → 세발</td><td class="owner o-a">영광</td></tr>
+        <tr><td class="k">금</td><td>블로그 주제 확정 · 보도 최종 컨펌 · 검색 노출 확인</td><td><span class="owner o-lead">팀장</span></td></tr>
+        <tr><td class="k">주 1회</td><td>TSAD · 이음 · 제이솔 · 토큰플러스 정산 확인</td><td>장부 담당</td></tr>
+      </table></div>
+    </div>
+    <div class="card">
+      <h2>접수 마감 시각</h2>
+      <div class="tablewrap"><table>
+        <tr><th>구분</th><th>마감</th><th>비고</th></tr>
+        <tr><td>트래픽·슬롯</td><td>16:00</td><td>13:50 전 당일 구동, 로직5·이음·프로핏 쇼핑은 익일</td></tr>
+        <tr><td>회송</td><td>14:00</td><td>이후 익일 리스트</td></tr>
+        <tr><td>가구매 · 쿠팡 자동구매</td><td>17:50</td><td>당일 진행, 리스트 18:30 전 또는 익일</td></tr>
+        <tr><td>네이버 자동구매(애드헬퍼)</td><td>17:10</td><td>입금 19:00(금 18:00), 입금 익일 진행</td></tr>
+        <tr><td>옥련롯데 송장</td><td>17:00</td><td>이후 송장 익일 전달. 당사출력은 예외 건만</td></tr>
+        <tr><td>드라우프 송장 회신</td><td>11 · 14 · 16시</td><td>16시 후 당직자, 없으면 익일</td></tr>
+        <tr><td>경지부 이체</td><td>13 · 16 · 18시</td><td>지출 보고 12:30 · 15:30 · 17:30</td></tr>
+      </table></div>
+    </div>
+  </div>
+</section>
+<section class="view" id="v-process">
+  <h1>프로세스</h1>
+
+  <div class="card">
+    <h2>1. 부산지사 주 2회 정산</h2>
+    <div class="flow">
+      <div class="st"><b>1 접수·장부</b>가이드 파일 상신, 부산장부 즉시 기입<span class="who">영광 · 서연 · 수시</span></div>
+      <div class="st"><b>2 초안</b>UI·플랫폼·장부·카톡·다우 대조 → 마감내역서. 화요 정산은 월, 금요 정산은 목 퇴근 전<span class="who">영광 · 서연</span></div>
+      <div class="st"><b>3 검수</b>장부·카톡·다우·플랫폼·UI 대조 후 오류를 확인 요청<span class="who"><span class="o-lead">팀장</span> · 전날 검수 후 익일 오전 10:00까지 부산지사 담당자에게 재송부</span></div>
+      <div class="st"><b>4 수정</b>확인 요청 반영해 마감서와 장부 함께 수정<span class="who">영광 · 서연 · 화/금 오전</span></div>
+      <div class="st"><b>5 송부</b>[G2G부산지사] 정산 방, 부대표·김주란·박도윤 태그<span class="who">영광 · 서연</span></div>
+      <div class="st"><b>6 입금·세발</b>이체확인증 확인 후 확정 금액으로 세금계산서 상신<span class="who">영광 · 서연 · 경지부</span></div>
+    </div>
+    <div class="callout indigo" style="margin-top:16px">
+      <b>팀장이 하던 마감서 초안 검수 방식</b>
+      <ol class="small">
+        <li>영광·서연이 올린 마감서 초안을 <b>장부 / 카카오톡 내역 / 다우오피스 내역 / 실제 플랫폼 진행 내역 / UI</b> 전부와 대조</li>
+        <li>안 맞는 부분(오류)을 찾아 영광·서연에게 확인 요청</li>
+        <li>영광·서연이 확인 요청을 보고 <b>마감서와 장부를 함께</b> 수정</li>
+        <li>수정본 재확인 후 부산지사에 송부</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. 리뷰 접수 → 정산</h2>
+    <div class="flow">
+      <div class="st"><b>1 접수</b>업체 톡방 가이드 파일. 개인톡 접수는 팀 채팅으로 유도<span class="who">접수자</span></div>
+      <div class="st"><b>2 정제</b>배송형태·입금대행·택배대행, 수량·배분, 금액·옵션, 목적(링크/키워드)<span class="who">접수자</span></div>
+      <div class="st"><b>3 상신</b>다우 작업요청서. 대행사-업체-영업담당자 제목 규정<span class="who">접수자</span></div>
+      <div class="st"><b>4 배정</b>협력x운영지원 방에 링크 → 협력팀장 실무진 배정<span class="who">협력팀</span></div>
+      <div class="st"><b>5 노티·입금</b>주정산 업체는 접수 완료 노티, 그 외 견적서 → 입금 확인<span class="who">접수자</span></div>
+      <div class="st"><b>6 리스트·송장</b>당일분 송장 접수 → 송장 포함 리스트 재전송 → 노션 업로드<span class="who">접수자</span></div>
+      <div class="st"><b>7 정산</b>세발·지결 상신, 노션 업로드, 장부 기입, 미수금<span class="who">접수자</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. 택배대행 송장</h2>
+    <div class="tablewrap"><table>
+      <tr><th>구분</th><th>업체</th><th>사용 조건</th><th>송장 요청</th></tr>
+      <tr><td class="k">택대1</td><td>지엔랩</td><td>가구매 빈박스 · 자동구매 주소지 분산</td><td><b>11/6 접수 중단</b></td></tr>
+      <tr><td class="k">택대2</td><td>드라우프 (롯데)</td><td>자동구매 관할주소지 · 주소지 쏠림</td><td>16:00 전 마감, 이후는 당직에 따라 다름</td></tr>
+      <tr><td class="k">택대3</td><td>제이투(앤드리) (CJ)</td><td>자동구매 관할주소지 · 주소지 쏠림</td><td>-</td></tr>
+      <tr><td class="k">택대4</td><td>옥련 (롯데)</td><td>자동구매 관할주소지 · 주소지 쏠림</td><td>17:00 전, 이후는 송장 익일 전달</td></tr>
+      <tr><td class="k">택대5</td><td>옥련 (롯데)</td><td>가구매 빈박스 · 자동구매 주소지 분산</td><td>17:00 전, 이후는 송장 익일 전달</td></tr>
+    </table></div>
+    <ul class="small" style="margin-top:12px">
+      <li>자동구매 쏠림 건은 협력팀 팀장 배분에 따라 택대2·3·4로 나뉨</li>
+      <li>옥련 17:00 이후 당사출력은 예외 건만(송장 누락·급한 건). 전 직원 합산 하루 100건 초과 금지, 그 외는 업체에 송장 익일 전달로 안내</li>
+      <li>관할주소지 건은 파일명에 "(관할주소지)" 기재. 송장 전달 시 택배사도 함께 전달</li>
+      <li>접수 전 원본 리스트에서 내부 주소지(쏠림·분산) 확인. 당일 출고·마감 임박 송장은 폐기 불가</li>
+      <li>리스트는 누적. 당일 구매자·주문번호만 접수, 재접수 금지. 관리 시트 한 줄 = 접수 한 번</li>
+    </ul>
+    <p class="note">기준 문서: <a href="https://app.notion.com/p/3d7709a2f4a08035ab7df76465b64635" target="_blank">노션 택배대행 ↗</a></p>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>4. 회송 (드라우프)</h2>
+      <ul class="small">
+        <li>조건: 로켓·그로스, 와우 전용 제외. 건별 택배 또는 화물 일괄</li>
+        <li>견적 = 회송 실행가 + 제품비. 회송형 전용 URL로 등록</li>
+        <li>경지부 사전 보고: 회사명 · 일정 · 건수 · 제품비. 리뷰엠엔씨 지결은 경지부</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>5. 트래픽 · 슬롯</h2>
+      <ul class="small">
+        <li>접수자가 접수부터 정산까지 끝까지 팔로업</li>
+        <li>매입 장부 · 매출 장부 · 내부자 시트 · 외부자 시트 4곳 기입</li>
+        <li>실행사마다 상품·단가가 달라 접수 전 어느 실행사인지 먼저 확인</li>
+        <li>정산: 정산서 → 접수일·수량 대조 → 검산 → 지결(정산서 첨부). 단가 변경은 경지부 노티 + 시트 수정</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>6. 세금계산서 · 지출결의</h2>
+      <ul class="small">
+        <li>받는 돈 세발, 나가는 돈 지결. 외주 건은 둘 다, 지결 댓글에 세발 링크</li>
+        <li>제목: YYMMDD 거래처 세금계산서 발행 / YYMMDD 거래처 품목 지출 건. 부산·흐름은 대행사-업체-영업담당자 필수</li>
+        <li>결재선: 기안 → 운영지원팀 팀장 → 마케팅운영 파트장 → 경지부 → 대표님. 팀장 결재 후 경지부 화면에 노출</li>
+        <li>상신 서류 임의 회수 금지. 대결 완료 건은 경지부 노티 후 재기안</li>
+        <li>지결 금액 = 장부 금액. 개인 지급은 신분증·통장사본, 세전 기재</li>
+        <li>발행 당일 노션 견적서·계산서 관리 업로드. 업체에는 견적서 페이지만 읽기 공유</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>7. 월초 장부 대조 · 미수금</h2>
+      <ul class="small">
+        <li>1~2일: 전 상품 매입·매출 장부를 접수 내역·시트·UI와 대조, 오류 0건 후 결과 노티</li>
+        <li>직후 흐름 영업자별(본사·인천·송도·미추홀) 트래픽 월정산서 → 트래픽 정산방</li>
+        <li>미수금 주내 수취. 경지부 월별 입출금 시트(C열 입금일, 보라색 = 세발 미상신) 수시 확인</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+<section class="view" id="v-partners">
+  <h1>거래처 · 실행사</h1>
+
+  <div class="card">
+    <h2>리뷰 거래처</h2>
+    <div class="tablewrap"><table>
+      <tr><th>거래처</th><th>담당</th><th>톡방</th><th>정산</th></tr>
+      <tr><td class="k">굿투 부산지사<br><small>제이엔씨네트웍스</small></td><td><span class="owner o-a">영광</span>/<span class="owner o-b">서연</span></td><td>[G2G부산지사] 접수·리스트·정산·C/S</td><td>주 2회 마감서(화: 금~월 접수 전체 / 금: 화~목 접수 전체), 당일~익일 입금</td></tr>
+      <tr><td class="k">흐름컴퍼니<br><small>본사·인천·송도·미추홀</small></td><td><span class="owner o-c">승일</span>/<span class="owner o-b">서연</span></td><td>[G2Gx흐름본사] 가이드 접수·견적서·리스트 / 지사별 리뷰 실행 / [G2Gx흐름] C/S·정산</td><td>리뷰 주정산(익주 월), 자동 익일, 트래픽·슬롯은 월초 월 견적서 송부</td></tr>
+      <tr><td class="k">마케이드</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] 마케이드 접수·리스트·정산·트래픽 슬롯</td><td>건별 입금, 지연 잦음</td></tr>
+      <tr><td class="k">제이솔컴퍼니<br><small>본사·서부지사</small></td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] 제이솔 접수·리스트</td><td>리뷰 건별, 트래픽 일·월</td></tr>
+      <tr><td class="k">알앤알</td><td><span class="owner o-a">영광</span>/<span class="owner o-c">승일</span></td><td>[G2G] 알앤알 실행 접수</td><td>선정산(모집 완료 즉시)</td></tr>
+      <tr><td class="k">인덕(바이럴매직)</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] (주)인덕 실행 접수·정산</td><td>금요 합산 견적 → 월요 결제</td></tr>
+      <tr><td class="k">제이투(앤드리)</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] 제이투 실행 접수·정산·택배대행</td><td>자동 건별, 제품비 월</td></tr>
+      <tr><td class="k">와이즈리테일</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] 와이즈리테일 실행 접수</td><td>크몽 결제 + 제품비 굿투 견적</td></tr>
+      <tr><td class="k">비상한마케팅</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>[G2G] 비상한 실행 접수</td><td>입금 후</td></tr>
+      <tr><td class="k">시골장터 · 다예나 · 커리쉴</td><td><span class="owner o-c">승일</span>/<span class="owner o-b">서연</span></td><td>[G2G] 시골장터 / 다예나 다샵 / 커리쉴</td><td>직광고주, 입금 후 진행</td></tr>
+      <tr><td class="k">사자앤뷰 · 삼인기획 · KCA미디어</td><td><span class="owner o-c">승일</span>/<span class="owner o-b">서연</span></td><td>[G2G] 사자앤뷰 / 삼인기획 / KCA미디어</td><td>대행사, 당일·익일 입금</td></tr>
+      <tr><td class="k">테일센트 · 센스애드 · 에스엘바이오텍 · 권수제</td><td colspan="3" class="muted">비활성 또는 접수 없음</td></tr>
+    </table></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>트래픽 · 슬롯 실행사</h2>
+      <div class="tablewrap"><table>
+        <tr><th>실행사 (상품)</th><th>장부</th><th>정산</th></tr>
+        <tr><td>자몽랩 (프로핏 로직1·2, 플레이스·쇼핑)</td><td><span class="owner o-c">승일</span>/<span class="owner o-b">서연</span></td><td>월 + 선충전</td></tr>
+        <tr><td>루센트라 (뭉치)</td><td><span class="owner o-c">승일</span>/<span class="owner o-b">서연</span></td><td>정산 요청 시(요일 고정 없음)</td></tr>
+        <tr><td>태동 (이음 로직3 · 퀵슬롯)</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>주, 이음2 중단</td></tr>
+        <tr><td>마케이드 (네오·베스트·베이스·캐럿)</td><td><span class="owner o-b">서연</span>/<span class="owner o-a">영광</span></td><td>정산서 수신 시</td></tr>
+        <tr><td>TSAD (알파고·아시아·베스트·보틀)</td><td><span class="owner o-c">승일</span>/<span class="owner o-a">영광</span></td><td>주, 계좌 2개</td></tr>
+        <tr><td>아우어 (프라다 외 슬롯)</td><td><span class="owner o-a">영광</span>/<span class="owner o-c">승일</span></td><td>월 1회</td></tr>
+        <tr><td>제이알컴퍼니 (토큰플러스 로직4·5)</td><td><span class="owner o-a">영광</span>/<span class="owner o-b">서연</span></td><td>일일 합산 견적 → 지결</td></tr>
+        <tr><td>흐름 (퍼펙트 쿠팡 슬롯)</td><td><span class="owner o-b">서연</span>/<span class="owner o-a">영광</span></td><td>월, 장부·톡방·UI·정산서 4대조</td></tr>
+        <tr><td>제이솔 (루메인·블루·레드·백링크)</td><td><span class="owner o-b">서연</span>/<span class="owner o-c">승일</span></td><td>일·월</td></tr>
+        <tr><td>제이앤베스트 (리더스 플레이스)</td><td><span class="owner o-a">영광</span>/<span class="owner o-c">승일</span></td><td>19시 마감</td></tr>
+        <tr><td>공식 애드헬퍼 (네이버 자동구매)</td><td>접수자</td><td>요청 17:30 · 입금 19:00</td></tr>
+      </table></div>
+    </div>
+    <div class="card">
+      <h2>택배대행 · 바이럴</h2>
+      <div class="tablewrap"><table>
+        <tr><th>업체</th><th>역할</th><th>담당 · 메모</th></tr>
+        <tr><td>옥련롯데</td><td>택대4·5, 17시 후 송장 익일 전달</td><td>김승현 점장</td></tr>
+        <tr><td>드라우프</td><td>택대2 · 회송 · 자동구매 C/S</td><td>박정석, 회신 11·14·16시</td></tr>
+        <tr><td>제이투(앤드리)</td><td>택대3</td><td>김완태 대표</td></tr>
+        <tr><td>지엔랩</td><td>택대1, 11/6 중단</td><td>심민택</td></tr>
+        <tr><td>뉴스컴바인</td><td>언론보도</td><td><span class="owner o-c">승일</span>, 월말 후불</td></tr>
+        <tr><td>체험인</td><td>블로그 기자단·체험단</td><td><span class="owner o-b">서연</span>, 충전 차감</td></tr>
+        <tr><td>리뷰트리</td><td>블로그 배포 · 영수증</td><td><span class="owner o-a">영광</span>, 선충전</td></tr>
+        <tr><td>애드코드 · 네이비 · 에이치컴퍼니</td><td>핫딜 · 카페침투</td><td><span class="owner o-c">승일</span>, 후불</td></tr>
+        <tr><td>애드스테이션 · 임소정</td><td>인스타 · 인플 블로거 섭외</td><td><span class="owner o-b">서연</span></td></tr>
+        <tr><td>위드어스컴퍼니 · 쇼호스트</td><td>쇼핑라이브 트래픽 · 쇼호스트비</td><td><span class="owner o-b">서연</span>, 방송 1건마다 지결</td></tr>
+      </table></div>
+    </div>
+  </div>
+</section>
+<section class="view" id="v-marketing">
+  <h1>마케팅</h1>
+
+  <div class="grid g2">
+    <div class="card">
+      <h2>1. 블로그 · 웹사이트 · 언론보도</h2>
+      <dl class="kv">
+        <dt>담당</dt><dd>블로그·웹사이트·AEO·홍보 기사 제작 서연(정)·영광(부) / 뉴스컴바인 접수 승일(정)·영광(부) / 보도 장부 승일, 정산 서연</dd>
+        <dt>목적</dt><dd>AI 인용 선점, 구글·네이버 상위 노출. 11/4~12/31</dd>
+        <dt>물량</dt><dd>리뷰 홈페이지 3건 · 메인 홈페이지 3건 · 네이버 블로그 3건(일), 언론보도 주 1건</dd>
+        <dt>원고</dt><dd>클로드로 HT·QA·FAQ 3타입 → 넥스트몽 AEO 90점 이상 → 업로드. 금칙어 23개 치환</dd>
+        <dt>이미지</dt><dd>젠스파크·Flow, 포스팅당 5~6장</dd>
+        <dt>보도 사이클</dt><dd>전주 월 조율 → 화 주제 컨펌 → 수 원고·배너 → 목 초안 컨펌 → 금 최종 → 월 게재. 뉴스컴바인 2~3일 전 접수</dd>
+        <dt><span class="owner o-lead">팀장</span> 컨펌</dt><dd>화 보도 주제 · 목 초안 · 금 블로그 주제 확정·보도 최종</dd>
+        <dt>기준 문서</dt><dd><a href="https://ahyeon3.github.io/aeo-seo-publishing/#overview" target="_blank">AEO·SEO 발행 업무표 ↗</a>(일·주·월 스케줄, 키워드)</dd>
+      </dl>
+    </div>
+    <div class="stack">
+    <div class="card">
+      <h2>2. 홈페이지 · 카카오톡 DB</h2>
+      <dl class="kv">
+        <dt>담당</dt><dd>영광(정) · 승일(부)</dd>
+        <dt>경로</dt><dd>g2greview.com 상담문의 · gtog2024.com 도입문의 · 카톡 비즈니스 · 메타 인스턴트 폼</dd>
+        <dt>실무</dt><dd>매시간 확인 → 영업자별 DB 시트 기입 → 개인톡 전달. 채팅은 답하지 않고 캡처만</dd>
+        <dt>분배</dt><dd>홈페이지·카톡 DB는 신규 영업 매니저(정경훈·권진서·김성진), 메타는 전 영업자 균등. AEO 문의는 대표님에게 엑셀</dd>
+        <dt>보고</dt><dd>일일 메타 성과 · 매주 월 주간 보고서 작성 → 조엠마 팀장님 보고(광고비·CPL·영업자별 메이드율·제언)</dd>
+      </dl>
+    </div>
+    <div class="card">
+      <h2>3. 메타 광고</h2>
+      <dl class="kv">
+        <dt>담당</dt><dd>영광(정) · 승일(부). 방향은 메타방에서 부대표와 조율</dd>
+      </dl>
+    </div>
+    </div>
+  </div>
+
+  <div class="card">
+      <h2>4. 크몽 · 숨고</h2>
+      <dl class="kv">
+        <dt>담당</dt><dd>서연(정) · 승일(부). 상품·가격 변경은 <span class="owner o-lead">팀장</span> 컨펌</dd>
+        <dt>크몽 상품</dt><dd>리뷰체험단 · 회송형 · 라이브커머스 · AEO·GEO · AI 상세페이지 · 쿠팡TOP 리뷰어(승인 대기). 10/19~20 등록</dd>
+        <dt>유입 응대</dt><dd>결제 확인 → 단톡방 개설(방장 이양) → 접수 → 입금대행 원칙. 첫 거래는 운영지원팀, 이후 관리 주체는 대표님 결정</dd>
+      </dl>
+    </div>
+</section>
+<section class="view" id="v-ledger">
+  <h1>노션 · 시트</h1>
+  <div class="callout indigo">
+    업무는 <b><a href="https://docs.google.com/spreadsheets/d/12q18oCnGOmjfzf8BdcBiIcjuhJe1a1_zXEzlqnZe6to/edit?gid=979529536#gid=979529536" target="_blank">운영본부 마스터 시트 ↗</a></b>와 <b><a href="https://app.notion.com/p/377709a2f4a080688cf8dc86c1983d95" target="_blank">운영지원팀 마스터 노션 ↗</a></b> 두 곳을 공용으로 사용.
+    &nbsp;·&nbsp; <b><a href="https://docs.google.com/spreadsheets/d/1vSLTQoSA5KJejGf4GDfon6rfK1g1Osa4ubN1KiI9Bn8/edit?gid=1517751605#gid=1517751605" target="_blank">업무분장표 ↗</a></b>
+    &nbsp;·&nbsp; <b><a href="https://ahyeon3.github.io/aeo-seo-publishing/#overview" target="_blank">AEO 업무표 ↗</a></b>
+  </div>
+
+  <div class="card">
+    <h2>어디서 무엇을 보나</h2>
+    <div class="grid g3">
+      <div><h4>돈이 들어왔는지</h4><ul class="small"><li>경지부 월별 입출금 시트 C열</li><li>입금알림방 캡처, 부산은 정산방 이체확인증</li></ul></div>
+      <div><h4>단가</h4><ul class="small"><li>온보딩 1 거래처별 단가표, 마스터 대행사단가 탭</li><li>부산은 단가DB 시트, 전체는 11/5 단가 엑셀</li></ul></div>
+      <div><h4>접수·진행 현황</h4><ul class="small"><li>gtog(일반) · gtogb(자동구매) 관리자</li><li>다우 결재 문서함, 택배대행 관리 시트 요약 탭</li></ul></div>
+      <div><h4>견적·계산서 발행 여부</h4><ul class="small"><li>노션 견적서·계산서 관리 업체 페이지(월 필터)</li></ul></div>
+      <div><h4>누가 무엇을 맡았는지</h4><ul class="small"><li><a href="https://docs.google.com/spreadsheets/d/1vSLTQoSA5KJejGf4GDfon6rfK1g1Osa4ubN1KiI9Bn8/edit?gid=1517751605#gid=1517751605" target="_blank">운영지원팀 업무분장표</a></li></ul></div>
+      <div><h4>매니저가 무엇을 배웠는지</h4><ul class="small"><li>노션 직원 Workspace 아카이브·인수인계 DB</li></ul></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>노션</h2>
+    <div class="tablewrap"><table>
+      <tr><th class="nowrap">공간</th><th>내용</th><th>쓰임</th></tr>
+      <tr><td class="k">운영지원팀 DB</td><td>DB(자료) 93행: 시트·가이드 PDF·양식·계정 / DB(정보) 11장: 온보딩 1~4, 택배대행, 운영지원팀 이해, 월초 프로세스, 신입 첫날</td><td>대표님은 운영지원팀 이해 · 월초 프로세스 두 장만 먼저</td></tr>
+      <tr><td class="k">온보딩 1</td><td>리뷰 프로세스·단가·배송 유형, 거래처별 단가표, 계좌·양식, 슬롯 오픈 방법</td><td>단가 질문의 원본</td></tr>
+      <tr><td class="k">온보딩 2</td><td>2-2 플랫폼별 매뉴얼·접수 프로세스(약 20만 자) / 2-3 정산·상신 규정·경지부 온보딩 / 2-4 계정·크몽·숨고</td><td>매니저 질문의 답. "노션 확인 후 질의" 원칙. 대표님은 2-3 정산 공통·거래처별 요약·상신 규정만</td></tr>
+      <tr><td class="k">온보딩 3 · 4</td><td>접수 유의사항·불가 유형, 자동구매·회송, 특수 캠페인</td><td>업체 응대 문구 원본</td></tr>
+      <tr><td class="k">택배대행</td><td>택대 1~5 현황, 17시 기준, 업체별 참고</td><td>단가·택배사 변경 시 온보딩 1·경지부와 함께 갱신</td></tr>
+      <tr><td class="k">견적서 · 계산서 관리</td><td>업체별 견적서 페이지(리뷰 15 · 트래픽 10 · 바이럴 6) + 세금계산서 3종</td><td>발행 당일 업로드. 업체에는 견적서 페이지만 읽기 공유</td></tr>
+      <tr><td class="k">접수 파일 관리</td><td>택대 1~5 · 회송 · 루프라 · 권선 · 한진 접수·송장 파일</td><td>톡방 파일 만료 대비, 택배대행 정산 근거</td></tr>
+      <tr><td class="k">직원 Workspace</td><td>아카이브(레퍼런스) · 인수인계 DB · 업무 요청 · 연장근로</td><td>배운 것은 당일 아카이브. 서로 접근 분리</td></tr>
+    </table></div>
+  </div>
+
+</section>
+<section class="view" id="v-manage">
+  <h1>팀 관리</h1>
+
+  <div class="card">
+    <h2>팀장이 하던 일 → 누가</h2>
+    <p class="small muted" style="margin:-6px 0 12px">빨간색 <b class="o-lead">팀장</b> = 팀장 공석 동안 대표님이 맡는 역할</p>
+    <div class="tablewrap"><table>
+      <tr><th>일</th><th>빈도</th><th>담당</th></tr>
+      <tr><td class="k">부산 마감서 검수</td><td>주 2회</td><td><span class="owner o-lead">팀장</span> 또는 경지부 컨펌</td></tr>
+      <tr><td class="k">콘텐츠·보도·크몽·메타 컨펌</td><td>주 3~4회</td><td><span class="owner o-lead">팀장</span></td></tr>
+      <tr><td class="k">단가·예외 판단</td><td>수시</td><td class="owner o-ceo">대표님 (부산지사는 부대표님)</td></tr>
+      <tr><td class="k">경지부·협력팀 조율</td><td>매일</td><td>매니저 각자, 규칙 변경은 <span class="owner o-lead">팀장</span></td></tr>
+      <tr><td class="k">근태 · 연장근로 · 듀얼넘버 · 휴가</td><td>수시 · 월초</td><td class="owner">조엠마</td></tr>
+      <tr><td class="k">자료 관리 (분장표·온보딩·노션)</td><td>수시</td><td><span class="owner o-lead">팀장</span></td></tr>
+      <tr><td class="k">직원 관리 (면담·채용)</td><td>수시</td><td><span class="owner o-lead">팀장</span></td></tr>
+      <tr><td class="k">업체 전체 관리 · 사용자별 최종 정산</td><td>수시</td><td class="owner o-ceo">대표님</td></tr>
+    </table></div>
+  </div>
+
+
+  <div class="card">
+    <h2>신입 인수인계 (2~5주)</h2>
+    <div class="flow">
+      <div class="st"><b>1 첫날</b>계약·지문·다우(총무), 업무용 카톡·구글·노션, 플랫폼 계정, 팀방 초대. 노션 링크 5개 → 다 읽고 노티<span class="who">팀장 · 총무</span></div>
+      <div class="st"><b>2 일정표·자료</b>인수인계 스케줄과 연습자료는 팀장이 만들고, 실제 인수인계는 해당 업무 담당자가 진행<span class="who">팀장 · 업무 담당자</span></div>
+      <div class="st"><b>3 동행</b>실접수를 선배 옆에서 처리. 없으면 연습자료<span class="who">선배</span></div>
+      <div class="st"><b>4 연습자료</b>업체별 접수 → 시트 → 견적 → 지결 → 계산서 → 노션. 선배 1차 → 팀장 2차 컨펌<span class="who">신입</span></div>
+      <div class="st"><b>5 기록</b>배운 것은 당일 아카이브. 하루 2~3회 진행 단계 확인<span class="who">신입</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>인수인계 진행 샘플</h2>
+    <p class="small" style="margin-top:-8px"><a href="https://app.notion.com/p/90e709a2f4a08389adce81541b9f8be9" target="_blank">노션 원본 보기 ↗</a></p>
+    <div class="grid g3" style="margin:12px 0 18px">
+      <div class="callout"><b>PART 1. 실무</b><br><span class="small">인수인계 현황에 따라 쉬운 업무부터 하나씩 단계적으로 실무 추가 (홍보글 업로드, 접수방, 리뷰 접수 등)</span></div>
+      <div class="callout"><b>PART 2. 인수인계</b><br><span class="small">팀장이 정한 스케줄에 맞춰 해당 업무 담당자가 신입에게 인수인계. 전일 미완료 건부터 이어서</span></div>
+      <div class="callout"><b>PART 3. 연습</b><br><span class="small">업체별 인계를 마친 뒤 연습자료 → 인계자 컨펌 → 코멘트 수정 → 압축 업로드(업체_연습자료N)</span></div>
+    </div>
+    <div class="tablewrap"><table>
+      <tr><th class="nowrap">날짜</th><th>인수인계 · 실무</th><th>연습자료</th></tr>
+      <tr><td class="k">10/26 (월)</td><td>온보딩 습득·개인 정리, 홍보글 아이보스·셀클럽·마멘토, 리뷰 접수 흐름·부산, 마스터 시트 구성·활용, 노션 활용법, 흐름 트래픽 톡방 자몽랩 프로핏1·2, 애드로그</td><td>자몽랩</td></tr>
+      <tr><td class="k">10/27 (화)</td><td>리뷰 플랫폼 계정 세팅, 리뷰 접수 흐름·인덕·부산, 흐름 트래픽 제이솔 레드·제트·루메인</td><td>흐름1 · 부산1</td></tr>
+      <tr><td class="k">10/28 (수)</td><td>리뷰어·업무 계정 세팅. 이날부터 홍보글 매일 업로드는 승일 담당</td><td>부산2 · 마케이드2 · 흐름2</td></tr>
+      <tr><td class="k">10/29 (목)</td><td>UI 접수방 · 내부자 트래픽 접수방 트래픽·슬롯 전체(접수·실행·관리·오픈·장부·지결·월초대조·정산 / TSAD·아우어·뭉치·럭키세븐·이음) </td><td>인덕</td></tr>
+      <tr><td class="k">10/30 (금)</td><td>실무: 인덕 주 정산서 오전 송부. 인계: 부산 리뷰·네이버 자동구매, 언론보도 뉴스컴바인 전체, 아우어·TSAD·토큰플러스·제이앤베스트 장부·지결·정산</td><td>앤드리 · 제이솔 · 인덕2 · 흐름3</td></tr>
+      <tr><td class="k">11/02 (월)</td><td>인계: 임소정 장부·정산, 쇼핑라이브 트리헛 정산 / 인계: 언론보도, 제이앤베스트, 리뷰트리</td><td>실무 견적서 · 세금계산서</td></tr>
+      <tr><td class="k">11/03 (화)</td><td>월초 실무: 리뷰·트래픽·기타 장부 대조, 미수금 수취. 인계: 임소정·애드코드 핫딜·인스타 마이크로, 웹·블로그·AEO·상위노출 / 인계: 홈페이지·카톡, 메타 광고·DB 분배·일일·주간 보고</td><td>-</td></tr>
+      <tr><td class="k">11/04 (수)</td><td>실무: 흐름·마케이드·인덕·제이솔·부산 리뷰 접수, 트래픽 접수방, 언론보도 원고·배너 초안. 인계: 크몽·숨고·상세페이지 / 인계: 부산 리뷰·네이버 자동구매</td><td>-</td></tr>
+      <tr><td class="k">11/05 (목)</td><td>실무 전반 + 제이투(앤드리) 접수, 언론보도 컨펌 → 수정 → 송출 요청</td><td>-</td></tr>
+      <tr><td class="k">11/06~</td><td>정해진 일정 없이 다른 매니저들과 실무를 단계적으로 진행하며 업무별 수시 인계</td><td>-</td></tr>
+    </table></div>
+  </div>
+</section>
+<section class="view" id="v-issues">
+  <h1>현안</h1>
+
+  <div class="card">
+      <h2>최근 변경</h2>
+      <div class="timeline">
+        <div class="tl"><div class="when">10.20</div><div class="what">빈박스 송장 17시 기준 분리</div><div class="how">17시 전 옥련, 후 지엔랩</div></div>
+        <div class="tl"><div class="when">10.29</div><div class="what">부산 정산 주 2회 확정</div><div class="how">화 일반 / 금 자동·트래픽. 택배대행 관리 시트 도입</div></div>
+        <div class="tl pink"><div class="when">10.29~11.01</div><div class="what">파트앰 제품비 환불 꼬임</div><div class="how">부산 이중 수령 → 차주 마감서 재청구. 담당자 퇴사로 11/10 확인</div></div>
+        <div class="tl"><div class="when">10.30</div><div class="what">크몽 첫 거래(와이즈리테일), 부산 법인 전환 공지</div><div class="how">11/2 제이엔씨네트웍스, 11/5 전 거래처 통일</div></div>
+        <div class="tl"><div class="when">11.03</div><div class="what">택배대행 관리법 시행, 결재 회수 금지</div><div class="how">회수 전 경지부 링크 공유</div></div>
+        <div class="tl"><div class="when">11.04</div><div class="what">AEO 기획안 시행, 조하늘 퇴사, 협력팀장 퇴사 이슈</div><div class="how">영업부 팀장 일반구매 11월 직접 진행, 협력 신입 3명 공고</div></div>
+        <div class="tl"><div class="when">11.05</div><div class="what">흐름 트래픽 월정산 첫 송부, 분장 재조정</div><div class="how">서연 부산 보조, 흐름 승일 주</div></div>
+        <div class="tl yellow"><div class="when">11.06</div><div class="what">지엔랩 중단, 비용 변경 노티 규칙, 부대표 정산 방식 재검토</div><div class="how">17시 후 옥련 ALPS 당사 출력. 온데이 페이백 지연 컴플레인 처리 완료</div></div>
+        <div class="tl pink"><div class="when">11.09</div><div class="what">부산지사 정산 방식 변경</div><div class="how">상품별 주 2회 → 접수 요일 기준. 금·토·일·월 접수 → 화요 정산 전체, 화·수·목 접수 → 금요 정산 전체</div></div>
+      </div>
+    </div>
+</section>
+<section class="view" id="v-links">
+  <h1>링크</h1>
+  <div class="grid g3">
+    <div class="card">
+      <h3>노션</h3>
+      <div class="src-list">
+        <a href="https://app.notion.com/p/377709a2f4a080688cf8dc86c1983d95" target="_blank">운영지원팀 마스터 노션<span>마스터 시트와 함께 전 업무 공용</span></a>
+        <a href="https://app.notion.com/p/3b3709a2f4a0803eb449e03f0a834e8e" target="_blank">운영지원팀 DB<span>자료 93행 · 온보딩 11장</span></a>
+        <a href="https://app.notion.com/p/3b9709a2f4a0819bac34f208bee3e40f" target="_blank">운영지원팀 견적서 · 계산서</a>
+        <a href="https://www.notion.so/3cd709a2f4a0813da7c5db0a31f0e9f6" target="_blank">운영지원팀 접수 파일<span>택대 1~5 · 회송</span></a>
+        <a href="https://app.notion.com/p/3c8709a2f4a0809ab07be65b558e9775" target="_blank">김영광 Workspace</a>
+        <a href="https://app.notion.com/p/3db709a2f4a080f88925c57ae995e048" target="_blank">이서연 Workspace</a>
+        <a href="https://app.notion.com/p/402709a2f4a08087be86fc9747be1538" target="_blank">김승일 Workspace</a>
+        <a href="https://www.notion.so/0c2fab8b1043409c956a209ae5428f1d" target="_blank">협력마케팅팀 노션</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>구글시트</h3>
+      <div class="src-list">
+        <a href="https://docs.google.com/spreadsheets/d/12q18oCnGOmjfzf8BdcBiIcjuhJe1a1_zXEzlqnZe6to/edit?gid=979529536#gid=979529536" target="_blank">운영본부 마스터 시트<span>노션과 함께 전 업무 공용 · 모든 시트·UI·장부 입구</span></a>
+        <a href="https://docs.google.com/spreadsheets/d/1vSLTQoSA5KJejGf4GDfon6rfK1g1Osa4ubN1KiI9Bn8/edit?gid=1517751605#gid=1517751605" target="_blank">운영지원팀 업무분장표<span>매니저별 정·부 담당 원본</span></a>
+        <a href="https://docs.google.com/spreadsheets/d/1QHZEjbCbplGJnECQBQts7_V6fTQhB_GI1T3G3IZxujs/edit?gid=2083689016#gid=2083689016" target="_blank">운영지원팀 택배대행 관리 시트</a>
+        <a href="https://docs.google.com/spreadsheets/d/1Kk41L21J0q64mcohQnM-StvYjnPjBmO1RTDJ_hFcoJU/edit" target="_blank">부산지사 통합 접수 시트(장부)</a>
+        <a href="https://docs.google.com/spreadsheets/d/1s4ux437_xWIO0Zu5YErAWEbT4b_qwxId2_CoQufbVQ4/edit?gid=1603593483" target="_blank">부산지사 단가표</a>
+        <a href="https://docs.google.com/spreadsheets/d/10hd44Tmle4RXAMgV4F0ZjjNAZkvwaqbSyxJJAYJBgHg/edit?gid=1919712982" target="_blank">공용시트<span>연장근로 승인 · 휴가</span></a>
+        <a href="https://docs.google.com/spreadsheets/d/1aaKpFbDVjhzzoHTexnsf1EI0uMXojWA0qZynlNMQHGw/edit?gid=1088838831#gid=1088838831" target="_blank">운영지원팀 월별 입출금 시트</a>
+        <a href="https://docs.google.com/spreadsheets/d/1w83-C7lkIwuliY0u6O6Ra22o7PGZeck8KUiv2qogV0c/edit" target="_blank">랜딩 · 카톡 DB 시트</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>시스템 · 가이드</h3>
+      <div class="src-list">
+        <a href="https://gtog2024.daouoffice.com/" target="_blank">다우오피스</a>
+        <a href="https://gtog.shopreview.co.kr/adm/dashboard" target="_blank">굿투리뷰 일반구매 관리자</a>
+        <a href="https://gtogb.shopreview.co.kr/adm/dashboard" target="_blank">굿투리뷰 자동구매 관리자</a>
+        <a href="https://g2greview.com/admin" target="_blank">리뷰 홈페이지 관리자</a>
+        <a href="https://gtog2024.com/admin/a_introduction_inquiry_list.php" target="_blank">홈페이지 관리자</a>
+        <a href="https://ahyeon3.github.io/aeo-seo-publishing/#overview" target="_blank">AEO·SEO 발행 업무표<span>일·주·월 스케줄 · 키워드</span></a>
+        <a href="https://ahyeon3.github.io/delivery-intake-guide/" target="_blank">택배대행 접수 관리법</a>
+        <a href="file:///Users/hwiyeonchoi/Desktop/협력마케팅팀 운영 프로세스 재설계 대시보드.html">협력팀 운영 재설계(11/8)</a>
+        <a href="file:///Users/hwiyeonchoi/Desktop/옥련 롯데 송장 출력 온보딩.html">옥련 롯데 송장 출력 온보딩</a>
+        <a href="file:///Users/hwiyeonchoi/Desktop/운영지원팀 관리업체_단가 및 접수량_261105.xlsx">관리업체 단가 · 접수량(11/5)</a>
+      </div>
+    </div>
+  </div>
+</section>
+  </div><!-- /content -->
+</div><!-- /main -->
+<aside class="panel">
+  <div class="pcard">
+    <h3 style="margin-bottom:10px">매니저</h3>
+    <div class="pitem"><div class="ico indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div><div><div class="n">김영광</div><div class="l">부산지사·알앤알 · Meta·DB·홈페이지 · 영상·이미지 제작</div></div></div>
+    <div class="pitem"><div class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div><div><div class="n">이서연</div><div class="l">상위노출·AEO·블로그·웹 · 홍보 기사 · 크몽·숨고 · 인덕·제이솔·마케이드</div></div></div>
+    <div class="pitem"><div class="ico yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div><div><div class="n">김승일</div><div class="l">흐름컴퍼니 · 홍보계정 업로드 · 뉴스컴바인 접수 · 트래픽 장부</div></div></div>
+  </div>
+  <div class="pcard">
+    <h3 style="margin-bottom:8px">운영지원팀 <span class="o-lead">팀장</span>이 확인해줘야 하는 업무</h3>
+    <span class="src"><span class="t">월</span><span class="m">부산 화요 정산 마감서 검수 (금~월 접수 전체)</span></span>
+    <span class="src"><span class="t">목</span><span class="m">부산 금요 정산 마감서 검수 (화~목 접수 전체) · 보도 초안 컨펌</span></span>
+    <span class="src"><span class="t">금</span><span class="m">블로그 주제 확정 · 보도 최종 컨펌 · 인덕 주 견적</span></span>
+    <span class="src"><span class="t">월초 1~3일</span><span class="m">장부 대조 결과(오류 0건) · 미수금 수취 · 흐름 트래픽·슬롯 월 견적서</span></span>
+    <span class="src"><span class="t">수시</span><span class="m">신규 업체 · 업체별 단가 · 원가 측정 등</span></span>
+  </div>
+  <div class="pcard">
+    <h3 style="margin-bottom:8px">바로 가기</h3>
+    <a class="src" href="https://docs.google.com/spreadsheets/d/12q18oCnGOmjfzf8BdcBiIcjuhJe1a1_zXEzlqnZe6to/edit?gid=979529536" target="_blank"><span class="t">운영본부 마스터 시트</span><span class="m">노션과 함께 전 업무 공용</span></a>
+    <a class="src" href="https://docs.google.com/spreadsheets/d/1vSLTQoSA5KJejGf4GDfon6rfK1g1Osa4ubN1KiI9Bn8/edit?gid=1517751605#gid=1517751605" target="_blank"><span class="t">운영지원팀 업무분장표</span><span class="m">정·부 담당 원본</span></a>
+    <a class="src" href="https://app.notion.com/p/377709a2f4a080688cf8dc86c1983d95" target="_blank"><span class="t">운영지원팀 마스터 노션</span><span class="m">마스터 시트와 함께 전 업무 공용</span></a>
+    <a class="src" href="https://app.notion.com/p/3b3709a2f4a0803eb449e03f0a834e8e" target="_blank"><span class="t">노션 운영지원팀 DB</span><span class="m">온보딩 · 자료</span></a>
+    <a class="src" href="https://app.notion.com/p/3b9709a2f4a0819bac34f208bee3e40f" target="_blank"><span class="t">운영지원팀 견적서 · 계산서</span><span class="m">업체별 발행 내역</span></a>
+    <a class="src" href="https://www.notion.so/3cd709a2f4a0813da7c5db0a31f0e9f6" target="_blank"><span class="t">운영지원팀 접수 파일</span><span class="m">택대 1~5 · 회송</span></a>
+    <a class="src" href="https://docs.google.com/spreadsheets/d/1aaKpFbDVjhzzoHTexnsf1EI0uMXojWA0qZynlNMQHGw/edit?gid=1088838831#gid=1088838831" target="_blank"><span class="t">운영지원팀 월별 입출금 시트</span><span class="m">입금일 · 세발 여부</span></a>
+    <a class="src" href="https://docs.google.com/spreadsheets/d/1QHZEjbCbplGJnECQBQts7_V6fTQhB_GI1T3G3IZxujs/edit?gid=2083689016#gid=2083689016" target="_blank"><span class="t">운영지원팀 택배대행 관리 시트</span><span class="m">접수 한 줄 = 한 번</span></a>
+    <a class="src" href="https://ahyeon3.github.io/aeo-seo-publishing/#overview" target="_blank"><span class="t">AEO·SEO 발행 업무표</span><span class="m">일·주·월 스케줄 · 키워드</span></a>
+  </div>
+</aside>
+</div><!-- /app -->
+<script>
+(function(){
+  const views=document.querySelectorAll('.view');
+  const btns=document.querySelectorAll('[data-v]');
+  function show(v){
+    if(!document.getElementById('v-'+v)) v='overview';
+    views.forEach(x=>x.classList.toggle('on', x.id==='v-'+v));
+    btns.forEach(b=>b.classList.toggle('on', b.dataset.v===v));
+    try{ localStorage.setItem('g2g-ceo-tab', v); }catch(e){}
+    window.scrollTo({top:0});
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>show(b.dataset.v)));
+  let init='overview'; try{ init=localStorage.getItem('g2g-ceo-tab')||init; }catch(e){}
+  if(location.hash){ const h=location.hash.slice(1); if(document.getElementById('v-'+h)) init=h; }
+  document.querySelectorAll('.flow').forEach(f=>f.style.setProperty('--cols', f.children.length));
+  show(init);
+  const t=document.getElementById('theme');
+  function applyTheme(m){ if(m==='dark') document.documentElement.setAttribute('data-theme','dark'); else document.documentElement.removeAttribute('data-theme'); }
+  let th='light'; try{ th=localStorage.getItem('g2g-theme')||th; }catch(e){}
+  applyTheme(th);
+  t.addEventListener('click',()=>{ th = th==='dark'?'light':'dark'; applyTheme(th); try{ localStorage.setItem('g2g-theme', th); }catch(e){} });
+})();
+</script>
+</body>
+</html>
